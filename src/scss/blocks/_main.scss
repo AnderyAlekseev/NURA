@@ -1,0 +1,52 @@
+.main {
+    background: url(../../img/bg.jpg)center center/cover no-repeat;
+    min-height: 736px;
+    padding-top: 252px;
+
+    color: $textColor;
+
+    &__descr {
+        li {
+            font-size: 0.8rem;
+            list-style-type: none;
+        }
+    }
+
+    &__btn {
+        margin-top: 20px;
+        padding: 20px 30px;
+        gap: 10px;
+        width: 245px;
+        height: 65px;
+        background-color: $activeColor;
+        border: none;
+        text-align: center;
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+
+    &__cottages {
+        margin-top: 40px;
+        width: 483px;
+
+        &__items {
+            margin-top: 20px;
+
+        }
+
+        &__item {
+            margin-right: 26px;
+
+            &_num {
+                font-size: 6rem;
+                line-height: 5.75rem;
+            }
+
+            &_descr {
+                // font-size: 1.25rem;
+                margin-left: 20px;
+            }
+        }
+    }
+
+}

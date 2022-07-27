@@ -30,9 +30,9 @@ task('styles', function() {
 });
 
 task('watch', function() {
-    watch("src/scss/**/*.+(scss|sass|css)").on('change', parallel('styles'));
-    watch("src/*.html").on('change', parallel('html'));
-    watch("src/js/**/*.js").on('change', parallel('scripts'));
+    watch("src/scss/**/*.+(scss|sass|css)").on('all', parallel('styles'));
+    watch("src/*.html").on('all', parallel('html'));
+    watch("src/js/**/*.js").on('all', parallel('scripts'));
     watch("src/fonts/**/*").on('all', parallel('fonts'));
     watch("src/icons/**/*").on('all', parallel('icons'));
     

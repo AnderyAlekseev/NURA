@@ -1,0 +1,59 @@
+@include media-breakpoint-up(md) {
+    * {
+        font-size: 16px;
+    }
+
+    .header {
+        height: auto;
+        padding: 0;
+        &__logo{
+            width: 144px;
+            height: 137px;
+        }
+        &__nav {
+            display: block;
+
+            ul {
+                li {
+                    margin: 0 8px;
+                }
+            }
+        }
+
+        &__phones {
+            margin-top: 33px;
+
+            &_link {
+                padding: 6px 20px;
+                margin: 0 8px;
+                span {
+                    display: block;
+                }
+            }
+        }
+
+        &__burger {
+            display: none;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    * {
+        font-size: 20px;
+    }
+
+    .header {
+        &__nav {
+
+            ul {
+                li {
+                    margin: 0 12px;
+                }
+            }
+        }
+
+    }
+
+
+}

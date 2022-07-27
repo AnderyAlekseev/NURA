@@ -1,0 +1,108 @@
+.header {
+    position: absolute;
+    color: $textColor;
+    width: 100%;
+    height: 88px;
+    padding: 22px 0px;
+
+    &__logo {
+        background: url(../../img/logo_svg.svg) center center/cover no-repeat;
+        width: 144px;
+        height: 44px;
+    }
+
+
+    &__wrapp_nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    &__phones {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        height: 44px;
+
+        &_link {
+            margin: 0 2px;
+            padding: 6px 10px;
+            gap: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: $textColor;
+
+            &:hover, &:focus {
+                cursor: pointer;
+                color: $textColor;
+                border: 1px solid $activeColor;
+                border-radius: 3px;
+            }
+
+            &:active {
+                color: $activeColor;
+                background-color: $textColor;
+            }
+
+            span {
+                display: none;
+            }
+        }
+    }
+
+    &__nav {
+        font-weight: 400;
+        line-height: 19px;
+        margin-top: 8px;
+        height: 26px;
+        display: none;
+
+        ul {
+            display: flex;
+            align-items: flex-end;
+            padding: 0;
+
+            li {
+                margin: 0 16px; // 1024 >15px
+                list-style-type: none;
+
+                a {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+        &__link {
+            text-decoration: none;
+            color: $textColor;
+            &:hover, &:focus{
+                color: $textColor;
+                cursor: pointer;
+            }
+            &_action {
+
+                border-bottom: 4px solid $activeColor;
+            }
+        }
+    }
+
+    &__burger {
+        display: flex;
+        flex-direction: column;
+        width: 44px;
+        margin-left: 8px;
+
+        span {
+            margin: 4px 0;
+            width: 100%;
+            border: 2px solid $textColor;
+        }
+    }
+}
+
+#link_phone {
+    // padding-right: 35px;
+}
